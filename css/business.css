@@ -1,0 +1,524 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+* {
+    list-style: none;
+    color: #000;
+    text-decoration: none;
+}
+
+
+
+/* 메뉴 */
+.header {
+    width: 100%;
+}
+.header .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    align-items: center;
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+}
+.header .navbar .logo {
+    padding-left: 55px;
+}
+.header .navbar .logo a {}
+.header .navbar .logo a img {}
+
+.header .navbar .menu {
+}
+.header .navbar .menu .m_name {
+    display: flex;
+}
+.header .navbar .menu .m_name li {
+    padding: 0 45px;
+}
+.header .navbar .menu .m_name li a {
+    color: #fff;
+    font-weight: bold;
+}
+.header .navbar .menu .m_name li .inner {
+    display: none;
+}
+.header .navbar .menu .m_name li .inner li {}
+.header .navbar .menu .m_name li .inner li a {
+    color: #fff;
+}
+.header .navbar .btn {}
+.header .navbar .btn a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #ffcf0f;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 60px 0 0;
+
+}
+
+
+
+/* 메뉴호버 */
+.header .navbar .menu .m_name li:after {
+    display:block;
+    content: '';
+    padding-top: 5px;
+    border-bottom: solid 4px #fff;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+.header .navbar .menu .m_name li:hover:after {
+    transform: scaleX(0.6);
+}
+.header .navbar .menu .m_name li:after{
+    transform-origin:  0% 70%;
+}
+
+
+
+/* 공통 title */
+.title {
+    margin-top: 70px;
+    text-align: center;
+}
+.title span {
+    display: inline-block;
+    width: 1px;
+    height: 60px;
+    background-color: #999999;
+}
+.title p {
+    margin: 32px 0 9px;
+    color: #999999;
+}
+.title h1 {
+    margin-top: 10px;
+    font-size: 52px;
+    font-weight: bold;
+}
+
+
+
+/* 텍스트 오른쪽 */
+.txt-r {
+    padding: 0 20px 0 78px;
+}
+.txt-r h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+.txt-r ul {
+    padding: 0;
+}
+.txt-r ul li {
+    line-height: 28px;
+    font-weight: 400;
+    margin: 16px 0;
+}
+.txt-r ul li span {
+    padding-left: 24px !important;
+}
+.txt-r ul li::before {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #8a8a8a;
+    vertical-align: middle;
+    margin:0 9px 5px 9px;
+}
+
+
+
+/* 텍스트 왼쪽 */
+.txt-l {
+    flex: 1;
+    padding-left: 30px;
+}
+.txt-l h2 {
+    font-size: 40px;
+    font-weight: bold;
+    padding-left: 51px;
+}
+.txt-l ul {
+    padding: 0;
+}
+.txt-l ul li {
+    line-height: 28px;
+    font-weight: 400;
+    padding: 0px 10px 0 51px;
+    margin: 16px 0;
+}
+.txt-l ul li span {
+    padding-left: 24px !important;
+}
+.txt-l ul li::before {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #8a8a8a;
+    vertical-align: middle;
+    margin:0 9px 5px 9px;
+}
+
+
+
+main {}
+/* b_img */
+.b_img {
+    background: url(../img/vbg_02.jpg) no-repeat;
+    background-size: cover;
+    height: 920px !important;
+    position: relative;
+}
+.b_img div {
+    position: absolute;
+    display: block;
+    width: 1240px;
+    align-items: center;
+    margin-left: 220px !important;
+    bottom: 77px;
+
+}
+.b_img div h2 {
+    font-weight: bold;
+    font-size: 48px;
+    color: #fff;
+    margin: 22px 0;
+}
+.b_img div p {
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 23px;
+    line-height: 32px;
+}
+
+
+
+/* 메인텍스트 */
+.m_txt {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+
+
+/* 에이전시 */
+.agency {}
+.agency .img1 {
+    display: flex;
+    margin: 109px 0 95px 0;
+    align-items: center;
+}
+.agency .img1 img {}
+.agency .img2 {
+    display: flex;
+    margin: 121px 0 121px 0;
+    align-items: center;
+}
+.agency .img2 img {}
+.agency .img3 {
+    display: flex;
+    align-items: center;
+}
+.agency .img3 img {}
+.agency .img4 {
+    display: flex;
+    margin: 121px 0 121px 0;
+        align-items: center;
+}
+.agency .img4 img {}
+
+
+
+/* 기술개발 */
+.development {}
+.development .img5 {
+    display: flex;
+    margin: 109px 0 95px 0;
+    align-items: center;
+}
+.development .img5 img {}
+.development .img6 {
+    display: flex;
+    align-items: center;
+    margin: 121px 0 121px 0;
+}
+.development .img6 img {}
+.development .img7 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 178px;
+}
+.development .img7 img {}
+
+
+
+/* 텍스트 롤링 */
+.rolling {
+    background: url(../img/buginess_fbg.jpg) no-repeat;
+    width: 100%;
+    height: 774px;
+    overflow: hidden;
+}
+.rolling .rolling_box {
+    white-space: nowrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-lines: single;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    min-height: 100%;
+}
+.rolling .aniText {
+    display: inline-block;
+    font-size: 180px;
+    font-weight: bolder;
+    line-height: 774px;
+    animation: slide-left 20s linear infinite;
+    padding: 0 200px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+    @keyframes slide-left {
+        from {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+        to {
+            -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+        }
+    }
+
+
+
+/* stamp */
+.stamp {
+    width: 1240px;
+    margin: 0 auto;
+    text-align: center;
+}
+.stamp .text::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 1px;
+    background-color: #fe2456;
+}
+.stamp .text {
+    padding: 100px 0 30px 0;
+}
+.stamp .text h2 {
+    font-weight: 600;
+    font-size: 62px;
+    text-align: center;
+    position: relative;
+    color: #fe2456;
+    padding: 23px 0 9px 0;
+    margin: 0;
+}
+.stamp .text p {
+    line-height: 35px;
+}
+
+
+
+/* 스토어 */
+.stamp .store {
+    display: flex;
+    justify-content: center;
+}
+.stamp .store .google {
+    display: flex;
+    align-items: center;
+    width: 239px;
+    height: 57px;
+    line-height: 57px;
+    border: 1px solid #dfdfdf;
+    text-align: center;
+    margin: 0 10px;
+    justify-content: center;
+}
+.stamp .store .google img {
+    margin: 0 9px;
+}
+.stamp .store .google p {}
+.stamp .store .apple {
+    display: flex;
+    align-items: center;
+    width: 239px;
+    height: 57px;
+    line-height: 57px;
+    border: 1px solid #dfdfdf;
+    text-align: center;
+    margin: 0 10px;
+    justify-content: center;
+}
+.stamp .store .apple img {
+    width: 23px;
+    height: 30px;
+    margin: 0 9px;
+    margin-bottom: 6px;
+}
+.stamp .store .apple p {}
+.stamp .zone {}
+.stamp .zone div img {}
+.stamp .zone div p {
+    color: #666666;
+    position: relative;
+    top: -112px;
+}
+.stamp .zone div p b {
+    color: black;
+}
+
+
+
+/* f_img */
+.f_img {
+    background: url(../img/f_bg_02.jpg)no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+.f_img .innertxt {
+    text-align: center;
+}
+.f_img .innertxt h2 {
+    font-size: 32px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 152px 0 57px 0;
+    margin: 0;
+}
+.f_img .innertxt .btn {
+    display: inline-block;
+}
+.f_img .innertxt .btn a {
+    color: #fff;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    padding: 19px 80px;
+}
+.f_img .innertxt .btn a img {
+}
+
+
+
+/* footer */
+.footer {}
+.ft {
+    display: flex;
+    padding: 91px 0 59px 0;
+    width: 1240px;
+    margin: 0 auto;
+}
+.ft .left {
+    width: 280px;
+    margin: 3px 0;
+}
+.ft .left p {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.ft .middle {
+    width: 630px;
+}
+.ft .middle p {
+    font-size: 24px;
+    font-weight: 500;
+}
+.ft .middle ul {
+    padding: 0;
+    font-size: 14px;
+    margin: 31px 0 74px 0;
+}
+.ft .middle ul li {
+    margin: 7px 0;
+}
+.ft .middle p:nth-of-type(2) {
+    font-size: 14px;
+    color: #666666;
+    font-weight: 400;
+    margin: 10px 0 13px 0;
+}
+.ft .right {
+    margin: 6px 0;
+}
+.ft .right p {
+    font-size: 15px;
+    color: #666666;
+    font-weight: 400;
+}
+.ft .right span {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+    margin: 4px 0 17px 0;
+}
+
+
+
+/* fade in up */
+/* @keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+.animatedFadeInUp {
+    opacity: 0
+}
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+} */
+
+
+.fadeIn {
+    opacity: 0;
+    transform: 7s;
+}
+
+
+.fade {
+    opacity: 0;
+    transition: transform 2s;
+}

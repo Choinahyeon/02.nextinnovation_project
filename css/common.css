@@ -1,0 +1,92 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+* {
+    list-style: none;
+    color: #000;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* background: #000; */
+}
+a {
+    text-decoration: none;
+}
+
+
+/* header */
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+.header .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    align-items: center;
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+}
+.header .navbar .logo {
+    padding-left: 55px;
+}
+.header .navbar .logo a {}
+.header .navbar .logo a img {}
+
+.header .navbar .menu {
+}
+.header .navbar .menu .m_name {
+    display: flex;
+}
+.header .navbar .menu .m_name li {
+    padding: 0 45px;
+}
+.header .navbar .menu .m_name li a {
+    color: #fff;
+    font-weight: bold;
+}
+.header .navbar .menu .m_name li .inner {
+    display: none;
+}
+.header .navbar .menu .m_name li .inner li {}
+.header .navbar .menu .m_name li .inner li a {
+    color: #fff;
+}
+
+.header .navbar .btn {}
+.header .navbar .btn a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #ffcf0f;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 60px 0 0;
+
+}
+
+
+
+/* 메뉴호버 */
+.header .navbar .menu .m_name li:after {
+    display:block;
+    content: '';
+    padding-top: 5px;
+    border-bottom: solid 4px #fff;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+
+.header .navbar .menu .m_name li:hover:after {
+    transform: scaleX(0.6);
+}
+.header .navbar .menu .m_name li:after{
+    transform-origin:  0% 70%;
+}
